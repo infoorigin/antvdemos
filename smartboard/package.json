@@ -1,0 +1,29 @@
+{
+  "name": "smartboard",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@antv/lite-insight": "^2.0.4-beta.0",
+    "@antv/narrative-text-vis": "^0.3.9",
+    "@antv/s2": "^1.29.1",
+    "@antv/s2-react": "^1.26.1",
+    "@antv/smart-board": "^2.0.4-beta.0",
+    "antd": "^4.23.1",
+    "antv-site-demo-rc": "^0.2.4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-json-view": "^1.21.3"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.33",
+    "@types/react-dom": "^17.0.10",
+    "@vitejs/plugin-react": "^1.0.7",
+    "typescript": "^4.5.4",
+    "vite": "^2.8.0"
+  }
+}

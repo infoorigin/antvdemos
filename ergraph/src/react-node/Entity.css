@@ -1,0 +1,103 @@
+.entity-container {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 2px;
+}
+.entity-container.fact {
+  border: 1px solid #cdddfd;
+}
+.entity-container.fact:hover {
+  border: 1px solid #1890ff;
+}
+.entity-container.dim {
+  border: 1px solid #decfea;
+}
+.entity-container.dim:hover {
+  border: 1px solid #1890ff;
+}
+.entity-container.other {
+  border: 1px solid #ced4de;
+}
+.entity-container.other:hover {
+  border: 1px solid #1890ff;
+}
+.entity-container .content {
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  margin: 1px 1px;
+}
+.entity-container .content.fact {
+  background-color: #cdddfd;
+}
+.entity-container .content.dim {
+  background-color: #decfea;
+}
+.entity-container .content.other {
+  background-color: #ced4de;
+}
+.entity-container .content .head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% - 12px);
+  height: 38px;
+  margin-left: 6px;
+  font-size: 12px;
+}
+.entity-container .content .head .type {
+  padding-right: 8px;
+}
+.entity-container .content .head .del-icon {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  size: 16px;
+  font-size: 14px;
+}
+.entity-container .content .head .del-icon:hover {
+  opacity: 0.6;
+  color: #1890ff;
+}
+.entity-container .content .body {
+  width: calc(100% - 12px);
+  height: calc(100% - 36px - 6px);
+  margin-bottom: 6px;
+  margin-left: 6px;
+  overflow: auto;
+  background-color: white;
+  cursor: pointer;
+}
+.entity-container .content .body .body-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 28px;
+  color: #595959;
+  font-size: 12px;
+  border-bottom: 1px solid rgba(206, 212, 222, 0.2);
+}
+.entity-container .content .body .body-item .name {
+  margin-left: 6px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.entity-container .content .body .body-item .name .pk,
+.entity-container .content .body .body-item .name .fk {
+  width: 12px;
+  margin-right: 6px;
+  color: #ffd666;
+  font-family: HelveticaNeue-CondensedBold;
+}
+.entity-container .content .body .body-item .type {
+  margin-right: 8px;
+  color: #bfbfbf;
+  font-size: 8px;
+}
